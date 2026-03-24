@@ -1,0 +1,133 @@
+<!-- UPDATED VERSION WITH ELECTRICITY + ELECTRONICS MODULES -->
+<!-- I kept your structure and added 2 FULL modules (smart + detailed combined) -->
+
+<!-- ADD THESE BUTTONS IN TOP NAV AFTER PERIPHERALS -->
+<button class="tnav-btn el" onclick="showMod('el',this)">⚡ Electricity</button>
+<button class="tnav-btn ee" onclick="showMod('ee',this)">🔌 Electronics</button>
+
+<!-- ================= ELECTRICITY MODULE ================= -->
+<div class="mod-page" id="mod-el">
+  <div class="hero" style="background:linear-gradient(135deg,#8B5A1A,#C97A2B);color:white" data-code="ELEC">
+    <div class="hero-tag">GENFE301 · Fundamentals of Electricity</div>
+    <h1>Electricity</h1>
+    <p>Core concepts, circuits, installation and real troubleshooting.</p>
+  </div>
+
+  <div class="page-body">
+
+    <!-- SECTION: BASICS -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Core Concepts</div>
+      <div class="kf"><strong>Voltage</strong> Push of electricity</div>
+      <div class="kf"><strong>Current</strong> Flow of electricity</div>
+      <div class="kf"><strong>Resistance</strong> Opposition to flow</div>
+      <div class="fml">Ohm's Law: V = I × R</div>
+      <div class="tip">If device fails: No voltage = no power | No current = break | High current = short</div>
+    </div>
+
+    <!-- CIRCUITS -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Circuit Types</div>
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th>Type</th><th>Key Idea</th><th>Use</th></tr>
+        <tr><td>Series</td><td>Same current</td><td>Simple circuits</td></tr>
+        <tr><td>Parallel</td><td>Same voltage</td><td>Home wiring</td></tr>
+      </table></div>
+      <div class="tip">Parallel is used in houses so one device failing doesn’t stop others</div>
+    </div>
+
+    <!-- AC/DC -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>AC vs DC</div>
+      <div class="kf"><strong>AC</strong> Alternating (homes)</div>
+      <div class="kf"><strong>DC</strong> Direct (electronics)</div>
+      <div class="tip">Power supply converts AC → DC for computers</div>
+    </div>
+
+    <!-- INSTALLATION -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Installation & Testing</div>
+      <div class="mc"><ul>
+        <li>Continuity test → check wire break</li>
+        <li>Voltage test → check supply</li>
+        <li>Current test → check flow</li>
+      </ul></div>
+    </div>
+
+    <!-- CHEATSHEET -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>⚡ Electricity Cheatsheet</div>
+      <div class="fml">V = I × R
+Series: same current
+Parallel: same voltage
+AC = alternating
+DC = direct
+Test: voltage, current, continuity</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= ELECTRONICS MODULE ================= -->
+<div class="mod-page" id="mod-ee">
+  <div class="hero" style="background:linear-gradient(135deg,#0D6E6E,#2dd4bf);color:white" data-code="ELX">
+    <div class="hero-tag">GENBE302 · Basic Electronics</div>
+    <h1>Electronics</h1>
+    <p>Components, circuits, testing and troubleshooting.</p>
+  </div>
+
+  <div class="page-body">
+
+    <!-- PASSIVE -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Passive Components</div>
+      <div class="kf"><strong>Resistor</strong> Limits current</div>
+      <div class="kf"><strong>Capacitor</strong> Stores charge</div>
+      <div class="kf"><strong>Inductor</strong> Magnetic storage</div>
+      <div class="tip">Burnt resistor = open circuit | Bulging capacitor = faulty</div>
+    </div>
+
+    <!-- ACTIVE -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Active Components</div>
+      <div class="kf"><strong>Diode</strong> One-way current</div>
+      <div class="kf"><strong>Transistor</strong> Switch/amplify</div>
+      <div class="kf"><strong>IC</strong> Complete circuits</div>
+      <div class="tip">If IC fails → whole system fails</div>
+    </div>
+
+    <!-- TOOLS -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Workshop Tools</div>
+      <div class="mc"><ul>
+        <li>Multimeter (MOST IMPORTANT)</li>
+        <li>Oscilloscope</li>
+        <li>Soldering iron</li>
+      </ul></div>
+    </div>
+
+    <!-- TROUBLESHOOT -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>Troubleshooting Steps</div>
+      <div class="fml">1. Check power
+2. Check current
+3. Identify faulty component
+4. Test with multimeter
+5. Replace</div>
+    </div>
+
+    <!-- CHEATSHEET -->
+    <div class="card">
+      <div class="card-head"><span class="dot"></span>🔌 Electronics Cheatsheet</div>
+      <div class="fml">Resistor = limits current
+Capacitor = stores charge
+Diode = one-way
+Transistor = switch
+IC = full circuit
+Always test with multimeter</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- DONE -->
